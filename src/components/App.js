@@ -10,12 +10,14 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Routes>
-        <Route path="/movies" element={<Movies />} />
-        <Route path="/directors" element={<Directors />} />
-        <Route path="/actors" element={<Actors />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <div className="container d-flex justify-content-center align-items-center" style={{ minHeight: "80vh" }}>
+        <Routes>
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/directors" element={<Directors />} />
+          <Route path="/actors" element={<Actors />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
     </div>
   );
 }
